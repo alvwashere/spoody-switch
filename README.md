@@ -2,10 +2,10 @@
 
 ```Changes from original:```
 
-`[1]` Improved performance (hopefully) -> original ran at 0.03 MS, this should run better. 
-`[2]` Used tables to allow switches to be used for multiple weapons if desired. 
-`[3]` Added support for multiple notification exports, no notifications & custom code. 
-`[4]` Added support for ESX Legacy due to GSO event EOL from 30th November 2022. 
+`[1]` Improved performance (hopefully) -> original ran at 0.03 MS, this should run better. <br>
+`[2]` Used tables to allow switches to be used for multiple weapons if desired. <br>
+`[3]` Added support for multiple notification exports, no notifications & custom code. <br>
+`[4]` Added support for ESX Legacy due to GSO event EOL from 30th November 2022. <br>
 
 ```Requirements:```
 
@@ -13,11 +13,11 @@
 
 ```Installation:```
 
-`[1]` Clone this repository.
-`[2]` Drag "**spoody-switch**" to your `resources` folder.
-`[3]` Ensure the script is started **AFTER** `es_extended`.
-`[4]` Run either of the SQL snippets provided below.
-`[5]` There - **spoody-switch** is installed.
+`[1]` Clone this repository. <br>
+`[2]` Drag "**spoody-switch**" to your `resources` folder. <br>
+`[3]` Ensure the script is started **AFTER** `es_extended`. <br>
+`[4]` Run either of the SQL snippets provided below. <br>
+`[5]` There - **spoody-switch** is installed. <br>
 
 ```SQL Snippets:```
 
