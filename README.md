@@ -24,13 +24,13 @@
 `For ESX 1.1 (or if you use Limit in your items table):`
 
 ```
-**INSERT INTO `items` (`name`, `label`, `limit`) VALUES ('switch', 'Switch', 10);**
+INSERT INTO `items` (`name`, `label`, `limit`) VALUES ('switch', 'Switch', 10);
 ```
 
 `For ESX 1.2 and above (or if you use Weight in your items table):`
 
 ```
-**INSERT INFO `items` (`name`, `label`, `weight`) VALUES ('switch', 'Switch', 1);**
+INSERT INTO `items` (`name`, `label`, `weight`) VALUES ('switch', 'Switch', 1);
 ```
 
 ```Credits:```
