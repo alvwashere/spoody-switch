@@ -35,6 +35,14 @@
 
 ```Credits:```
 
-`[Spoody]` Discord: Spoody#9999
-`[Discord]` https://discord.gg/spoody
-`[Website]` https://spoody.dev
+**Original Script:**
+
+`[Spoody]` Discord: Spoody#9999 <br> 
+`[Discord]` https://discord.gg/spoody <br>
+`[Website]` https://spoody.dev <br>
+
+**Modified Script:** 
+
+`[Alv]` Discord: Alv#9999 <br> 
+`[Discord]` https://discord.gg/alv <br>
+`[Website]` https://alv-gg.tebex.io <br>
