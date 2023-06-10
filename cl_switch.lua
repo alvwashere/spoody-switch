@@ -12,11 +12,6 @@ Weapons = {
 local notify = 'esx' -- esx/mythic/bulletin -> add your own if you know what you're doing (Line )
 
 local playerPed = PlayerPedId()
-Legacy = true
-
-if not Legacy then
-    ESX = exports['es_extended']:getSharedObject()
-end
 
 function loadanimdict(dictname)
     if not HasAnimDictLoaded(dictname) then
