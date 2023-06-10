@@ -23,7 +23,7 @@ function loadanimdict(dictname)
 end
 
 RegisterNetEvent('spoody:switch')
-AddEventHandler('spoody:switch', function(source)
+AddEventHandler('spoody:switch', function(source, _type)
     TriggerEvent('esx_inventoryhud:closeInventory')
     Wait(50)
     loadanimdict('missmic4')
@@ -45,19 +45,36 @@ AddEventHandler('spoody:switch', function(source)
         end
     end
     usingSwitch = true
+    switchType = _type
 end)
 
 CreateThread(function()
-    for k, v in pairs(Weapons) do
-        SetPedAmmo(playerPed, GetHashKey(k), v)
-        while true do
-            if not usingSwitch then
-                waitTimer = 500 -- Feel free to change this!
-            else
-                waitTimer = 85 -- Feel free to change this!
-                ClearPedTasks(playerPed)
-                Wait(waitTimer)
-                PedSkipNextReloading(playerPed)
+    if switchType='switch' then
+        for k, v in pairs(Weapons) do
+            SetPedAmmo(playerPed, GetHashKey(k), v)
+            while true do
+                if not usingSwitch then
+                    waitTimer = 500 -- Feel free to change this!
+                else
+                    waitTimer = 85 -- Feel free to change this!
+                    ClearPedTasks(playerPed)
+                    Wait(waitTimer)
+                    PedSkipNextReloading(playerPed)
+                end
+            end
+        end
+    elseif switchType == 'better_switch' then
+        for k, v in pairs(Weapons) do
+            SetPedAmmo(playerPed, GetHashKey(k), v*2)
+            while true do
+                if not usingSwitch then
+                    waitTimer = 500 -- Feel free to change this!
+                else
+                    waitTimer = 85 -- Feel free to change this!
+                    ClearPedTasks(playerPed)
+                    Wait(waitTimer)
+                    PedSkipNextReloading(playerPed)
+                end
             end
         end
     end
